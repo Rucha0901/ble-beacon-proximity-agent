@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: ble-beacon-proximity-agent
+version: 1.0.0
+description: Bluetooth low energy rssi signal filtering, kalman filter proximity smoothing, and advertisement interval tuning.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - kalman-filter-smoothing
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - developer-tools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/ble-beacon-proximity-agent"
